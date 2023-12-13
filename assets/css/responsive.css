@@ -1,0 +1,8 @@
+@media screen and (max-width:991px) {
+    .header .header-item.navigation{
+        display: none;
+    }
+    .header .header-item.action{
+        display: none;
+    }
+}
