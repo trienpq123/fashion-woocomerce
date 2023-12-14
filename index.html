@@ -59,9 +59,9 @@
                                 <span class="count">0</span>
                             </a>
                         </li>
-                        <li class="action-item">
-                            <a href="#search">
-                                <span class="search"><i class="icofont-search"></i></span>
+                        <li class="action-item" >
+                            <a onclick="openPopup(this)" data-popup="tim-kiem">
+                                <span class="search" ><i class="icofont-search"></i></span>
                             </a>
                         </li>
                         <li class="action-item">
@@ -102,8 +102,8 @@
 
             <!-- POPUP MODAL -->
             <div class="popup-fixed" id="tim-kiem">
-                <div class="popup-modal">
-                    <div id="search">
+                <div class="popup-modal slide-bottom">
+                    <div id="search" class="">
                         <form action="">
                             <div class="form-group">
                                 <input type="text" placeholder="Tìm kiếm tại đây ..." class="form-control">
@@ -126,6 +126,25 @@
                                                 <span class="price">30.0000đ</span><span
                                                     class="price-old">20.0000đ</span>
                                             </div>
+                                            <div class="result-content__item result-desc">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. A deserunt, vel labore totam corrupti molestiae dicta ducimus saepe alias veritatis! Suscipit, corporis officia eius quasi laborum ea cum saepe adipisci!
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="result-item">
+                                    <div class="result-left">
+                                        <div class="result-image">
+                                            <img src="assets/images/no-image.png" alt="Sản phẩm 1">
+                                        </div>
+                                    </div>
+                                    <div class="result-right">
+                                        <div class="result-content">
+                                            <div class="result-content__item result-name">Sản phẩm 1</div>
+                                            <div class="result-content__item result-price">
+                                                <span class="price">30.0000đ</span><span
+                                                    class="price-old">20.0000đ</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -134,7 +153,7 @@
                     </div>
                 </div>
 
-                <div class="popup-close">
+                <div class="popup-close slide-bottom" onclick="closePopup(this)">
                     <i class="icofont-close"></i>
                 </div>
             </div>
