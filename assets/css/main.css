@@ -277,6 +277,7 @@ header {
     right: 0;
     top: 0;
     bottom: 0;
+    ;
 }
 
 .popup-fixed .popup-close{
@@ -304,6 +305,10 @@ header {
     font-size: 18px;
 }
 
+.popup-modal #search form input{
+    border-radius: 100px;
+}
+
 .popup-modal #search form button {
     position: absolute;
     right: 0;
@@ -325,11 +330,18 @@ header {
     top: 0;
     height: 450px;
     background: #fff;
-    margin-top:40px;
+    margin-top:42px;
     padding:8px;
     border-radius: 6px;
     border-top-right-radius: unset;
     border-top-left-radius: unset;
+    border-radius: 12px;
+    display: none;
+    
+}
+
+.popup-modal #search .result.show{
+    display: block;
 }
 
 .result{
