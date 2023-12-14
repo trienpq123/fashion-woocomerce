@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/css/animation.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
     <!-- CDN ICONS -->
     <!-- https://icofont.com/ -->
@@ -19,7 +20,7 @@
 <body>
     <header id="header">
         <div class="container">
-            <div  class="header">
+            <div class="header">
                 <div class="header-item logo">
                     <!-- <img src="" alt=""> -->
                     LOGO
@@ -30,10 +31,13 @@
                         <li class="navigation-item"><a href="#">Trang chủ</a></li>
                         <li class="navigation-item"><a href="#">Giới thiệu</a></li>
                         <li class="navigation-item">
-                            <a href="#"><span><i class="icofont-news"></i></span> Tin tức <span><i class="icofont-thin-down"></i></span></a>
+                            <a href="#"><span><i class="icofont-news"></i></span> Tin tức <span><i
+                                        class="icofont-thin-down"></i></span></a>
                             <ul class="sub-menu">
-                                <li><a href="#"><span><i class="icofont-newspaper"></i></span>Tin tức 1 <span><i class="icofont-thin-down"></i></span></a> </li>
-                                <li><a href="#"><span><i class="icofont-newspaper"></i></span>Tin tức 1 <span><i class="icofont-thin-down"></i></span></a> </li>
+                                <li><a href="#"><span><i class="icofont-newspaper"></i></span>Tin tức 1 <span><i
+                                                class="icofont-thin-down"></i></span></a> </li>
+                                <li><a href="#"><span><i class="icofont-newspaper"></i></span>Tin tức 1 <span><i
+                                                class="icofont-thin-down"></i></span></a> </li>
                             </ul>
                         </li>
                         <li class="navigation-item"><a href="#">Tuyển dụng</a></li>
@@ -67,6 +71,7 @@
                         </li>
                     </ul>
                 </div>
+
                 <div class="header-item menu-bar">
                     <ul>
                         <li class="line-bar"></li>
@@ -79,16 +84,81 @@
             <div class="header-mb">
                 <ul>
                     <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#">
+                            <span><i class="icofont-home"></i></span> Sản phẩm </a>
+                        <span class="icon-dropdown-menu"><i class="icofont-thin-down"></i></span>
+                        <div class="sub-menu">
+                            <ul>
+                                <li><a href="#">Sản phẩm 1</a></li>
+                                <li><a href="#">Sản phẩm 2</a></li>
+                            </ul>
+                        </div>
+                    </li>
                     <li><a href="#">Giới thiệu</a></li>
                     <li><a href="#">Về chúng tôi</a></li>
                     <li><a href="#">Tin tức</a></li>
                 </ul>
             </div>
+
+            <!-- POPUP MODAL -->
+            <div class="popup-fixed">
+                <div class="popup-modal">
+                    <div id="search">
+                        <form action="">
+                            <div class="form-group">
+                                <input type="text" placeholder="Tìm kiếm tại đây ..." class="form-control">
+                                <button type="submit" class="btn"><i class="icofont-search"></i></button>
+                            </div>
+                        </form>
+                        <div class="result">
+                            <div class="result-title">Kết quả tìm kiếm: <span class="result-count">0</span>kết quả</div>
+                            <div class="result-list">
+                                <div class="result-item">
+                                    <div class="result-left">
+                                        <div class="result-image">
+                                            <img src="assets/images/no-image.png" alt="Sản phẩm 1">
+                                        </div>
+                                    </div>
+                                    <div class="result-right">
+                                        <div class="result-content">
+                                            <div class="result-content__item result-name">Sản phẩm 1</div>
+                                            <div class="result-content__item result-price">
+                                                <span class="price">30.0000đ</span><span class="price-old">20.0000đ</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="popup-close">
+                    <i class="icofont-close"></i>
+                </div>
+            </div>
+
         </div>
     </header>
 </body>
 <!-- CDN -->
-<script src="https://cdn.jsdelivr.net/npm/icofont@1.0.0/main.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/icofont@1.0.0/main.min.js"></script> -->
+
+<script>
+    $(document).ready(function () {
+        // BAR OPEN MENU MOBILE
+        $('.header-item.menu-bar').click(function () {
+            $('.header-mb').slideToggle()
+        })
+        // TOGGLE MENU BAR MOBILE PLUGIN
+        $('.header-mb ul li span.icon-dropdown-menu').click(function () {
+            $(this).parent().find('.sub-menu ul').slideToggle()
+        })
+    })
+</script>
 <!-- END CDN -->
 
 </html>

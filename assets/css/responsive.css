@@ -5,4 +5,11 @@
     .header .header-item.action{
         display: none;
     }
+    .header .header-item.menu-bar{
+        display: block;
+    }
+
+    .header .header-mb{
+        display: block;
+    }
 }

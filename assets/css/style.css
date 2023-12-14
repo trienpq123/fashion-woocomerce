@@ -1,0 +1,21 @@
+.form-control {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cdcdcd;
+    border-radius: 6px;
+}
+
+.form-group {
+    position: relative;
+}
+
+button.btn {
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+    background: rgb(0, 0, 0);
+    background: -moz-linear-gradient(300.63deg, rgba(0, 0, 0, 0) 84.5%, rgba(255, 255, 255, 1) 6.36%);
+    background: -webkit-linear-gradient(300.63deg, rgba(0, 0, 0, 0) 84.5%, rgba(255, 255, 255, 1) 6.36%);
+    background: linear-gradient(300.63deg, rgba(0, 0, 0, 0) 84.5%, rgba(255, 255, 255, 1) 6.36%);
+    /* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#ffffff", GradientType=1); */
+}
