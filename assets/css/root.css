@@ -1,0 +1,20 @@
+:root {
+    /* ROOT - BACKGROUND */
+    --background-color-main: #000;
+    /* ROOT - TEXT */
+    --text-color-main: #000;
+    --text-color-hover: #fff;
+    --text-color-active: #fff;
+    --text-color-white: #fff;
+    /* ROOT - BORDER */
+    --border-color-main: #000;
+
+    /* ROOT - GRADIENT */
+
+    --background-gradient:  linear-gradient(203deg, rgba(1,61,89,1) 52%, rgba(3,15,117,1) 98%);
+
+    /* IMAGE-WIDTH */
+
+    --max-width-image: 160px
+
+}

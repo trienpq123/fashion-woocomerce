@@ -13,9 +13,37 @@ button.btn {
     padding: 8px;
     border-radius: 6px;
     border: none;
-    background: rgb(0, 0, 0);
-    background: -moz-linear-gradient(300.63deg, rgba(0, 0, 0, 0) 84.5%, rgba(255, 255, 255, 1) 6.36%);
-    background: -webkit-linear-gradient(300.63deg, rgba(0, 0, 0, 0) 84.5%, rgba(255, 255, 255, 1) 6.36%);
-    background: linear-gradient(300.63deg, rgba(0, 0, 0, 0) 84.5%, rgba(255, 255, 255, 1) 6.36%);
-    /* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#ffffff", GradientType=1); */
+    
+}
+
+.btn{
+    padding: 8px 16px;
+    outline: none;
+    background: transparent;
+    border: 1px solid #cdcdcd;
+    border-radius: 4px;
+}
+
+.d-grid {
+    display: grid;
+}
+
+.d-block{
+    display: block;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.align-center{
+    align-items: center ;
+}
+
+.gap-10{
+    gap:10px
+}
+
+.mt-8{
+    margin-top:8px
 }

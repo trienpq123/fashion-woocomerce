@@ -5,16 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tour - Du lịch Phú Quốc 2024</title>
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
-    <link rel="stylesheet" href="assets/css/animation.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+
+
 
     <!-- CDN ICONS -->
     <!-- https://icofont.com/ -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/icofont@1.0.0/dist/icofont.min.css">
-    <!--  -->
+    <!-- SWIPER CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- AOS CSS  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- End CDN ICONS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/animation.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/root.css">
+
 </head>
 
 <body>
@@ -59,9 +66,9 @@
                                 <span class="count">0</span>
                             </a>
                         </li>
-                        <li class="action-item" >
+                        <li class="action-item">
                             <a onclick="openPopup(this)" data-popup="tim-kiem">
-                                <span class="search" ><i class="icofont-search"></i></span>
+                                <span class="search"><i class="icofont-search"></i></span>
                             </a>
                         </li>
                         <li class="action-item">
@@ -127,7 +134,9 @@
                                                     class="price-old">20.0000đ</span>
                                             </div>
                                             <div class="result-content__item result-desc">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. A deserunt, vel labore totam corrupti molestiae dicta ducimus saepe alias veritatis! Suscipit, corporis officia eius quasi laborum ea cum saepe adipisci!
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. A deserunt, vel
+                                                labore totam corrupti molestiae dicta ducimus saepe alias veritatis!
+                                                Suscipit, corporis officia eius quasi laborum ea cum saepe adipisci!
                                             </div>
                                         </div>
                                     </div>
@@ -160,12 +169,210 @@
 
         </div>
     </header>
+    <section id="banner">
+        <div class="container">
+            <div class="banner-container">
+                <div class="banner-list swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="banner-item swiper-slide">
+                            <div class="banner-item__image">
+                                <img src="assets/images/banner-1.jpeg" alt="" data-aos="fade-right">
+                            </div>
+
+                            <div>
+                                <div class="banner-item__content">
+                                    <div class="title">
+                                        <h1 data-aos="fade-right">Đánh giá tiêu đề</h1>
+                                    </div>
+                                    <div class="sub">
+                                        <h2 data-aos="fade-right">Tiêu đề Lớn</h2>
+                                    </div>
+                                    <div class="desc" data-aos="fade-right">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae explicabo
+                                            vero
+                                        </p>
+                                    </div>
+                                    <div class="view-more" data-aos="fade-right">
+                                        <a href="#" class="btn">Xem thêm</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="banner-item swiper-slide">
+                            <div class="banner-item__image">
+                                <img src="assets/images/banner-1.jpeg" alt="" data-aos="fade-right">
+                            </div>
+
+                            <div>
+                                <div class="banner-item__content">
+                                    <div class="title">
+                                        <h1 data-aos="fade-right">Đánh giá tiêu đề</h1>
+                                    </div>
+                                    <div class="sub">
+                                        <h2 data-aos="fade-right">Tiêu đề Lớn</h2>
+                                    </div>
+                                    <div class="desc" data-aos="fade-right">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae explicabo
+                                            vero
+                                        </p>
+                                    </div>
+                                    <div class="view-more" data-aos="fade-right">
+                                        <a href="#" class="btn">Xem thêm</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+
+                <!-- <div class="banner-content swiper-content">
+                    <div class="swiper-wrapper ">
+                        <div class="banner-content__item swiper-slide">
+                            <div class="title">
+                                <h1>Đánh giá tiêu đề</h1>
+                            </div>
+                            <div class="sub">
+                                <h2>Tiêu đề Lớn</h2>
+                            </div>
+                            <div class="desc">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae explicabo vero
+                                </p>
+                            </div>
+                            <div class="view-more">
+                                <a href="#" class="btn">Xem thêm</a>
+                            </div>
+                        </div>
+                        <div class="banner-content__item swiper-slide">
+                            <div class="title">
+                                <h1>Đánh giá tiêu đề</h1>
+                            </div>
+                            <div class="sub">
+                                <h2>Tiêu đề Lớn</h2>
+                            </div>
+                            <div class="desc">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae explicabo vero
+                                </p>
+                            </div>
+                            <div class="view-more">
+                                <a href="#" class="btn">Xem thêm</a>
+                            </div>
+                        </div>
+                        <div class="banner-content__item swiper-slide">
+                            <div class="title">
+                                <h1>Đánh giá tiêu đề</h1>
+                            </div>
+                            <div class="sub">
+                                <h2>Tiêu đề Lớn</h2>
+                            </div>
+                            <div class="desc">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae explicabo vero
+                                </p>
+                            </div>
+                            <div class="view-more">
+                                <a href="#" class="btn">Xem thêm</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+
+
+    </section>
+    <main>
+        <!-- <section id="category">
+            <div class="container">
+                <div class="category-container">
+                    <div class="category-title ladi-title">
+                        <h2>Danh mục</h2>
+                    </div>
+                    <div class="category-list d-flex align-center gap-10">
+                        <div class="category-item">
+                            <a href="#ghe-an">
+                                <div class="category-image">
+                                    <img src="assets/images/category-1.jpg" alt="" class="img-hover-scale">
+                                </div>
+                                <div class="category-content mt-8">
+                                    <div class="title"><a href="#">Ghế Ăn</a></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="category-item">
+                            <a href="#ghe-an">
+                                <div class="category-image">
+                                    <img src="assets/images/category-1.jpg" alt="" class="img-hover-scale">
+                                </div>
+                                <div class="category-content mt-8">
+                                    <div class="title"><a href="#">Ghế Ăn</a></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="category-item">
+                            <a href="#ghe-an">
+                                <div class="category-image">
+                                    <img src="assets/images/category-1.jpg" alt="" class="img-hover-scale">
+                                </div>
+                                <div class="category-content mt-8">
+                                    <div class="title"><a href="#">Ghế Ăn</a></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+    </main>
 </body>
 <!-- CDN -->
+<!-- Jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
     integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- Iconfont -->
 <!-- <script src="https://cdn.jsdelivr.net/npm/icofont@1.0.0/main.min.js"></script> -->
+<!-- SWIPER -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflowEffect: {
+            rotate: 75,
+            stretch: 0,
+            depth: 50,
+            modifier: 1,
+            slideShadows: true,
+
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            
+        },
+
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        parallax: true
+
+
+    });
+    
+</script>
+<!-- AOS JS  -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1200,
+    });
+</script>
+<!-- JS MAIN -->
 <script src="assets/js/main.js"></script>
 <script>
 
@@ -178,7 +385,11 @@
         $('.header-mb ul li span.icon-dropdown-menu').click(function () {
             $(this).parent().find('.sub-menu ul').slideToggle()
         })
+
+
     })
+
+
 </script>
 <!-- END CDN -->
 
