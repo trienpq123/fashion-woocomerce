@@ -172,63 +172,32 @@
     <section id="banner">
         <div class="container">
             <div class="banner-container">
-                <div class="banner-list swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="banner-item swiper-slide">
-                            <div class="banner-item__image">
-                                <img src="assets/images/banner-1.jpeg" alt="" data-aos="fade-right">
-                            </div>
-
-                            <div>
-                                <div class="banner-item__content">
-                                    <div class="title">
-                                        <h1 data-aos="fade-right">Đánh giá tiêu đề</h1>
-                                    </div>
-                                    <div class="sub">
-                                        <h2 data-aos="fade-right">Tiêu đề Lớn</h2>
-                                    </div>
-                                    <div class="desc" data-aos="fade-right">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae explicabo
-                                            vero
-                                        </p>
-                                    </div>
-                                    <div class="view-more" data-aos="fade-right">
-                                        <a href="#" class="btn">Xem thêm</a>
-                                    </div>
+                    <div class="banner-list swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="banner-item swiper-slide">
+                                <div class="banner-item__image">
+                                    <img src="assets/images/banner-1.jpeg" alt="" data-aos="fade-right">
                                 </div>
+
+                             
+                            </div>
+                            <div class="banner-item swiper-slide">
+                                <div class="banner-item__image">
+                                    <img src="assets/images/banner-1.jpeg" alt="" data-aos="fade-right">
+                                </div>  
+                            </div>
+                            <div class="banner-item swiper-slide">
+                                <div class="banner-item__image">
+                                    <img src="assets/images/banner-1.jpeg" alt="" data-aos="fade-right">
+                                </div>  
                             </div>
                         </div>
-                        <div class="banner-item swiper-slide">
-                            <div class="banner-item__image">
-                                <img src="assets/images/banner-1.jpeg" alt="" data-aos="fade-right">
-                            </div>
-
-                            <div>
-                                <div class="banner-item__content">
-                                    <div class="title">
-                                        <h1 data-aos="fade-right">Đánh giá tiêu đề</h1>
-                                    </div>
-                                    <div class="sub">
-                                        <h2 data-aos="fade-right">Tiêu đề Lớn</h2>
-                                    </div>
-                                    <div class="desc" data-aos="fade-right">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae explicabo
-                                            vero
-                                        </p>
-                                    </div>
-                                    <div class="view-more" data-aos="fade-right">
-                                        <a href="#" class="btn">Xem thêm</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
                     </div>
-                    <div class="swiper-pagination"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                </div>
 
-                <!-- <div class="banner-content swiper-content">
+                <div class="banner-content swiper-content">
                     <div class="swiper-wrapper ">
                         <div class="banner-content__item swiper-slide">
                             <div class="title">
@@ -276,7 +245,7 @@
                             </div>
                         </div>
                     </div>
-                </div> -->
+                </div>
             </div>
         </div>
 
@@ -337,18 +306,10 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
     var swiper = new Swiper('.swiper-container', {
-        effect: 'coverflow',
+        effect: 'cards',
         grabCursor: true,
         centeredSlides: true,
         slidesPerView: 'auto',
-        coverflowEffect: {
-            rotate: 75,
-            stretch: 0,
-            depth: 50,
-            modifier: 1,
-            slideShadows: true,
-
-        },
         pagination: {
             el: ".swiper-pagination",
             clickable: true,

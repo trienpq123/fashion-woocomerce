@@ -427,7 +427,7 @@ header {
     background-size: cover;
 }
 
-.banner-list{
+/* .banner-list{
     height: 500px;
     position: relative;
     overflow: hidden;
@@ -463,10 +463,27 @@ header {
     max-width: 238px;
     top: 50%;
     transform: translateY(-50%);
+    aspect-ratio: 3/4;
+    
+} */
+
+.banner-item .banner-item__image{
+    /* position: absolute;
+    right: 0;
+    max-width: 238px;
+    top: 50%;
+    transform: translateY(-50%); */
+    aspect-ratio: 3/4;
+    max-width: 55%;
+    margin: 0 auto;
     
 }
 
-/* .banner-container {
+.banner-item .banner-item__image img{
+    border-radius: 10px;
+}
+
+.banner-container {
     position: relative;
     max-height: 600px;
     min-height: 450px;
@@ -521,19 +538,22 @@ header {
     top: 50%;
     right: 0;
     transform: translateY(-50%);
-    max-width: 80%;
+    max-width: 40%;
     overflow: hidden;
     border-radius: 12px;
+    overflow: hidden;
 }
 
 .banner-list .banner-item {
-    max-width: 450px;
+    /* max-width: 450px; */
     height: 100%;
     object-fit: cover;
     border-radius: 12px;
     overflow: hidden;
 
-} */
+}
+
+
 
 /* SWIPER */
 
@@ -545,6 +565,7 @@ header {
     left: unset !important;
     position: absolute;
     width: unset !important;
+    top: 50% !important
 }
 
 .swiper-pagination .swiper-pagination-bullet {
@@ -571,10 +592,10 @@ header {
 }
 
 .swiper-button-next{
-    right: 45%;
+    right: 40%;
 }
 .swiper-button-prev{
-    left: 45%;
+    left: 40%;
 }
 
 .swiper-button-next::after,
