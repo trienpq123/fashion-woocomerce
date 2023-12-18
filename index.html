@@ -172,79 +172,39 @@
     <section id="banner">
         <div class="container">
             <div class="banner-container">
-                    <div class="banner-list swiper-container">
-                        <div class="swiper-wrapper">
-                            <div class="banner-item swiper-slide">
-                                <div class="banner-item__image">
-                                    <img src="assets/images/banner-1.jpeg" alt="" data-aos="fade-right">
-                                </div>
+                <div class="banner-list swiper-container">
+                    <div class="swiper-wrapper banner-wrapper">
+                        <div class="banner-item swiper-slide">
+                            <div class="banner-image">
+                                <img src="assets/images/banner-1.png" alt="">
+                            </div>
+                            <div class="banner-content">
+                                <h1>Bộ Sưu Tập Sofa</h1>
+                                <h2>Sofa Lounger</h2>
+                                <p>Lounge là sofa thư giãn thế hệ đời nâng cấp xN</p>
+                                <a href="#" class="btn">Mua Ngay</a>
+                            </div>
+                        </div>
+                        <div class="banner-item swiper-slide">
+                            <div class="banner-image">
+                                <img src="assets/images/banner-1.png" alt="">
+                            </div>
+                            <div class="banner-content">
+                                <h1>Bộ Sưu Tập Sofa</h1>
+                                <h2>Sofa Lounger</h2>
+                                <p>Lounge là sofa thư giãn thế hệ đời nâng cấp xN</p>
+                                <a href="#" class="btn">Mua Ngay</a>
+                            </div>
+                        </div>
 
-                             
-                            </div>
-                            <div class="banner-item swiper-slide">
-                                <div class="banner-item__image">
-                                    <img src="assets/images/banner-1.jpeg" alt="" data-aos="fade-right">
-                                </div>  
-                            </div>
-                            <div class="banner-item swiper-slide">
-                                <div class="banner-item__image">
-                                    <img src="assets/images/banner-1.jpeg" alt="" data-aos="fade-right">
-                                </div>  
-                            </div>
-                        </div>
-                        <div class="swiper-pagination"></div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
                     </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
 
-                <div class="banner-content swiper-content">
-                    <div class="swiper-wrapper ">
-                        <div class="banner-content__item swiper-slide">
-                            <div class="title">
-                                <h1>Đánh giá tiêu đề</h1>
-                            </div>
-                            <div class="sub">
-                                <h2>Tiêu đề Lớn</h2>
-                            </div>
-                            <div class="desc">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae explicabo vero
-                                </p>
-                            </div>
-                            <div class="view-more">
-                                <a href="#" class="btn">Xem thêm</a>
-                            </div>
-                        </div>
-                        <div class="banner-content__item swiper-slide">
-                            <div class="title">
-                                <h1>Đánh giá tiêu đề</h1>
-                            </div>
-                            <div class="sub">
-                                <h2>Tiêu đề Lớn</h2>
-                            </div>
-                            <div class="desc">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae explicabo vero
-                                </p>
-                            </div>
-                            <div class="view-more">
-                                <a href="#" class="btn">Xem thêm</a>
-                            </div>
-                        </div>
-                        <div class="banner-content__item swiper-slide">
-                            <div class="title">
-                                <h1>Đánh giá tiêu đề</h1>
-                            </div>
-                            <div class="sub">
-                                <h2>Tiêu đề Lớn</h2>
-                            </div>
-                            <div class="desc">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae explicabo vero
-                                </p>
-                            </div>
-                            <div class="view-more">
-                                <a href="#" class="btn">Xem thêm</a>
-                            </div>
-                        </div>
-                    </div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
                 </div>
             </div>
         </div>
@@ -305,26 +265,32 @@
 <!-- SWIPER -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
-    var swiper = new Swiper('.swiper-container', {
-        effect: 'cards',
+
+    var swiper = new Swiper('.banner-list', {
+        effect: 'fade',
         grabCursor: true,
         centeredSlides: true,
+        spaceBetween: 100,
         slidesPerView: 'auto',
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
-            
+
         },
 
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
+            clickable: true,
         },
-        parallax: true
-
-
+        parallax: true,
     });
-    
+
+
+
+
+
+
 </script>
 <!-- AOS JS  -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
