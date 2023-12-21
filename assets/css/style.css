@@ -47,3 +47,22 @@ button.btn {
 .mt-8{
     margin-top:8px
 }
+
+.ladi-title{
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 24px;
+    position: relative;
+}
+
+.ladi-title::after{
+    content:'';
+    position: absolute;
+    width: 10%;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 3px;
+    background: var(--background-color-main);
+    margin-bottom: -12px;
+}
