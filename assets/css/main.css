@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
 
 * {
     padding: 0;
@@ -453,10 +454,11 @@ header {
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     /* overflow: hidden; */
 }
-.banner-item .banner-image  img {
+
+.banner-item .banner-image img {
     position: absolute;
-    top:-10%;
-    right:0;
+    top: -10%;
+    right: 0;
     bottom: 0;
     left: 0;
     max-height: unset;
@@ -477,8 +479,9 @@ header {
 }
 
 .banner-item .banner-content h2 {
-    font-size: 55px;
+    font-size: 70px;
     margin-bottom: 24px;
+    font-family: 'Play', sans-serif;
 }
 
 .banner-item .banner-content p {
@@ -495,7 +498,7 @@ header {
     transition: background .5s ease, color .3s ease;
 }
 
-.banner-item .banner-content a:hover{
+.banner-item .banner-content a:hover {
     background: var(--background-color-main);
     color: var(--text-color-white);
 }
@@ -516,7 +519,7 @@ header {
     top: 50% !important
 }
 
-.banner-wraper{
+.banner-wraper {
     position: absolute;
     left: 0;
     top: 0;
@@ -548,7 +551,7 @@ header {
     border-radius: 100px;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, #007aff 0px 0px 0px 1px;
     margin-bottom: 2%;
-   
+
 }
 
 .swiper-button-next {
@@ -564,18 +567,18 @@ header {
     font-size: 48px;
 }
 
-.swiper-fade .swiper-slide{
+.swiper-fade .swiper-slide {
     opacity: 0 !important;
-   
+
 }
 
-.swiper-fade .swiper-slide-active{
+.swiper-fade .swiper-slide-active {
     z-index: 1;
     opacity: 1 !important;
 
 }
 
-.swiper-3d .swiper-slide-shadow{
+.swiper-3d .swiper-slide-shadow {
     background: unset;
 }
 
